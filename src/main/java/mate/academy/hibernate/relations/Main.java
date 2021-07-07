@@ -1,6 +1,5 @@
 package mate.academy.hibernate.relations;
 
-import java.util.List;
 import mate.academy.hibernate.relations.model.Actor;
 import mate.academy.hibernate.relations.model.Country;
 import mate.academy.hibernate.relations.model.Movie;
@@ -12,6 +11,8 @@ import mate.academy.hibernate.relations.service.impl.CountryServiceImpl;
 import mate.academy.hibernate.relations.service.impl.MovieServiceImpl;
 import mate.academy.hibernate.relations.util.HibernateUtil;
 import org.hibernate.SessionFactory;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
