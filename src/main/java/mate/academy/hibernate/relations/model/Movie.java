@@ -1,11 +1,17 @@
 package mate.academy.hibernate.relations.model;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "movies")
 public class Movie implements Cloneable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
+    @OneToMany
     private List<Actor> actors;
 
     public Movie() {
