@@ -21,6 +21,6 @@ public class CountryServiceImpl implements CountryService {
 
     @Override
     public Country get(Long id) {
-        return countryDao.get(id).orElse(new Country());
+        return countryDao.get(id).get();
     }
 }
